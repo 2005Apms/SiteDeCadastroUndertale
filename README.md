@@ -1,2 +1,9 @@
 # SiteDeCadastroUndertale
-Um site de cadastro com Nome, Idade, Sexo e País com o tema do jogo Undetale
+Um site de cadastro temático com o jogo Undertale.<br>
+Contém:<br>
+---Nome<br>
+---Idade<br>
+---Sexo<br>
+---País
+
+Feito em HTML, CSS e JavaScript.
