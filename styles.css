@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+  padding: 5%;
+  background-image: url(https://i.pinimg.com/originals/9a/2a/a3/9a2aa3ccba5c3bce83e2e3f0a607c147.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(246,246,246);
+  background-position: 100%;
+}
+
+/* TEXTO PRINCIPAL */
+
+h1 {
+  font-size: xx-large;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 255, 255);
+}
+
+/* FORMULÁRIO */
+
+.forms {
+  font-size: larger;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+.forms-sexo {
+  font-size: medium;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+}
+
+/* NAVBAR */
+
+a,
+a:active,
+a::after {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(0, 255, 0);
+}
+
+.navbar {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.532);
+    z-index: 1;
+}
+
+.container {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    color: white;
+    padding: 0.5rem;
+}
+
+/* CONTEÚDO INÍCIO */
+
+.content {
+  position: fixed; 
+}
+/* Define a posição onde o texto principal ficará */
+
+.line {
+ display: flex;
+ position: fixed;
+}
+/* Define o alinhamento dos itens contidos na classe .line */
+
+.content-item {
+ top:50%;                      
+ transform: translate(0, 120%);
+ white-space: nowrap;
+ font-size: 5rem;
+ color: white;
+ overflow: hidden;
+ animation: writer 2s steps(20) alternate;
+}
+/* Formatação do texto principal da página */
+
+@keyframes writer {
+ from {
+   width: 0;
+ }
+ to {
+   width: 57rem;
+ }
+}
+/* Animação do título (máquina de escrever) */
+
+@keyframes push {
+ from {
+     transform: translateY(-30%);
+ }
+ to {
+     transform: translateY(0);
+ }
+}
+
+/* RODAPÉ */
+
+footer {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 110, 255);
+  text-align: center;
+  justify-content: center;
+  font-size: smaller;
+  vertical-align: middle;
+  padding: 0.5rem;
+  position: absolute;
+}

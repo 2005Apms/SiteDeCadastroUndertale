@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <div class="nav-item">
+                <a class="item-link" href="index.html">Início</a>
+            </div>
+            <div class="nav-item">
+                <a class="item-link" href="forms.html">Formulário</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+<div class="forms">
+
+•Nome:ㅤ<input id="txtNome" type="text"
+value="Nome"
+onfocus="this.value=' ';" />
+ㅤㅤㅤ•Idade:ㅤ<input id="txtIdade" type="text"
+value="Idade"
+onfocus="this.value=' ';" />
+<br><br><br>
+•Sexo:<br> <br>
+
+<div class="forms-sexo">
+
+Masculino⠀<input id="rdM" name="sexo" type="radio"
+ondblclick="if(this.checked){this.checked=false};"/><br>
+Feminino ⠀<input id="rdF" name="sexo" type="radio"
+ondblclick="if(this.checked){this.checked=false};"/><br>
+Outro⠀⠀⠀⠀<input id="rdO" name="sexo" type="radio"
+ondblclick="if(this.checked){this.checked=false};"/><br><br><br>
+
+</div>
+
+•País:ㅤ <select id="selPais">
+    <option value="Brasil">Brasil</option>
+    <option value="França">França</option>
+    <option value="Itália">Itália</option>
+    <option value="Espanha">Espanha</option>
+  </select><br><br><br>
+
+<input type="button" id="result" value="Enviar" onclick="enviar();"/><br><br><br>
+
+<div id="dvResultado" value="Enviar"></div>
+
+</div>
+
+</body>
+
+<footer>
+    Projeto feito por:
+    <a href="https://github.com/KrosberBR" target="_blank">
+        Naan Moreira Lorena
+    </a>
+    e 
+    <a href="https://github.com/2005Apms" target="_blank">
+        Arthur Pinto de Moraes Silva
+    </a>
+  </footer>
+
+</html> 
